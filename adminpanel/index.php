@@ -40,14 +40,19 @@ $jumlahProduk = mysqli_num_rows($queryProduk);
 </style>
 
 <body>
+
     <?php require "navbar.php" ?>
+
     <div class="container mt-4">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">
-                <i class="fas fa-home"></i> Home
-            </li>
-        </ol>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="fas fa-home"></i> Home
+                </li>
+            </ol>
         </nav>
+
         <h2>Halo <?php echo $_SESSION['username'] ?></h2>
         <div class="container mt-3">
 
